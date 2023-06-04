@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<configuration>
+<timestamp key="timestamp" datePattern="yyyyMMdd'-'HHmmss"/>
+  <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+   <encoder>
+     <pattern>%d [%thread] %-5level [%X{X-HT-TRANSACTION-ID}] %logger{36} - %msg%n</pattern>
+   </encoder>
+ </appender>
+  <!-- setting logger -->
+  <logger name="org.seasar.doma" level="debug"/>
+  <logger name="org.springframework" level="info"/>
+  <logger name="gb" level="debug"/>
+  <!-- setting root logger -->
+  <root level="info">
+    <appender-ref ref="stdout" />
+  </root>
+</configuration>
