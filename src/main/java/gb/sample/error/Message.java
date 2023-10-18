@@ -1,9 +1,9 @@
 package gb.sample.error;
 
-public class ErrorMessage {
+public class Message {
     private String message;
 
-    public ErrorMessage(String message) {
+    public Message(String message) {
         this.message = message;
     }
 
